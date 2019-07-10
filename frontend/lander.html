@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="icon.png">
+	<title>Image Based Shopping</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+			<img src="icon.png" width="30" height="30" alt="Shopping Icon">
+    		Image Based Shopping
+  		</a>
+	</nav>
+
+	<div class="container">
+		<br>
+		<h1>Welcome to Image Based Online Shopping!</h1>
+
+		<div class="input-group mb-3">
+  			<div class="input-group-prepend">
+    			<span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+  			</div>
+  			<div class="custom-file">
+    			<input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+    			<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+  			</div>
+			<button id="predict-button" class="btn btn-success">Get Suggestions</button>
+		</div>
+
+		<!--<div class="container">-->
+			<!--<input type="file" id="image-selector" >-->
+			<!--<button id="predict-button" class="btn btn-success">Get Suggestions</button>-->
+		<!--</div>-->
+
+		<br>
+
+		<div class="container">
+			<h4 style="font-weight: bold">Query</h4>
+			<hr>
+			<div class="row">
+				<div class="col-sm"><img id="selected-image" class="img-responsive img-thumbnail" src=""/></div>
+    			<div class="col-sm"></div>
+    			<div class="col-sm"></div>
+			</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="container">
+			<h4 style="font-weight: bold">Predictions</h4>
+			<hr>
+			<div class="container wrapper" id="img-container">
+			</div>
+			
+		</div>
+		<br>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
